@@ -1,4 +1,8 @@
 <?php
 require __DIR__ . '/../vendor/autoload.php';
 
-echo "app initialized";
+use App\Controllers\GoalController;
+
+$controller = new GoalController();
+$controller->handleRequest();
+?>
