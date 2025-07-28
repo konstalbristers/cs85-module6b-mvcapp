@@ -1,0 +1,11 @@
+{
+    "name": "andrianaparisi/module6",
+    "description": "assignment for module 6",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/"
+        }
+    },
+    "require": {}
+}
