@@ -7,15 +7,15 @@
 
     <form method="POST">
         <label>Goal Name: 
-            <input type="text" name="name" value="<?php htmlspecialchars($goal->name); ?>">
+            <input type="text" name="name" value="<?= htmlspecialchars($goal->name); ?>">
         </label><br>
 
         <label>Target: 
-            <input type="number" name="target" value="<?php htmlspecialchars($goal->target); ?>">
+            <input type="number" name="target" value="<?= htmlspecialchars($goal->target); ?>">
         </label><br>
 
         <label>Add Progress: 
-            <input type="number" name="progress">
+            <input type="number" name="progress" value="<?= htmlspecialchars($goal->progress); ?>">
         </label><br>
 
         <button type="submit">Update</button>

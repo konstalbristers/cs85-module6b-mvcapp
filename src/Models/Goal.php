@@ -22,5 +22,9 @@ class Goal {
         $percentage = ($this->progress / $this->target) * 100;
         return "{$this->name}: {$this->progress}/{$this->target} (" . round($percentage) . "% complete)";
     }
+    public function isComplete(): bool {
+        return $this->progress >= $this->target;
+    }
+    
 }
 ?>
